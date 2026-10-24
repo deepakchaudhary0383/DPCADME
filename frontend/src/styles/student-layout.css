@@ -1,0 +1,477 @@
+.student-layout {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f7f8f5;
+
+  color: #17211b;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR
+   --------------------------------------------------------- */
+
+.student-sidebar {
+  width: 248px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 18px 22px;
+
+  background: #17211b;
+  color: #f4f5f1;
+
+  flex-shrink: 0;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR BRAND
+   --------------------------------------------------------- */
+
+.student-sidebar-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 10px;
+
+  margin-bottom: 52px;
+}
+
+.sidebar-brand-mark {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+.sidebar-brand-name {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+/* ---------------------------------------------------------
+   NAVIGATION
+   --------------------------------------------------------- */
+
+.student-navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.navigation-label {
+  margin: 0 10px 12px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #748077;
+}
+
+.student-nav-link {
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 0 12px;
+
+  border-left: 2px solid transparent;
+
+  color: #9da8a0;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.student-nav-link:hover {
+  color: #f0f2ef;
+
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.student-nav-link.active {
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.075);
+
+  border-left-color: #d4ddd5;
+}
+
+.nav-icon {
+  width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  color: #78857b;
+}
+
+.student-nav-link.active .nav-icon {
+  color: #f4f5f1;
+}
+
+/* ---------------------------------------------------------
+   SIDEBAR BOTTOM
+   --------------------------------------------------------- */
+
+.student-sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-divider {
+  height: 1px;
+
+  margin: 0 8px 18px;
+
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 8px 10px;
+}
+
+.sidebar-user-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sidebar-user-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.sidebar-user-name {
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #e7ebe7;
+}
+
+.sidebar-user-role {
+  font-size: 10px;
+
+  color: #78837b;
+}
+
+.sidebar-logout {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 14px;
+
+  padding: 9px 10px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #7f8a82;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  text-align: left;
+
+  transition: color 0.2s ease;
+}
+
+.sidebar-logout:hover {
+  color: #e4e9e5;
+}
+
+.sidebar-logout span {
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------
+   MAIN CONTENT AREA
+   --------------------------------------------------------- */
+
+.student-main {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------------------------------------
+   TOP BAR
+   --------------------------------------------------------- */
+
+.student-topbar {
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0 42px;
+
+  border-bottom: 1px solid #e2e5e1;
+
+  background: #f7f8f5;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.topbar-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #cdd3ce;
+
+  background: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #17211b;
+}
+
+.topbar-user-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.topbar-user-text span {
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #263129;
+}
+
+.topbar-user-text small {
+  font-size: 10px;
+
+  color: #7a837c;
+}
+
+/*-----------------------------------------*/
+.sidebar-user,
+.topbar-user {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar-user {
+  width: 100%;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------
+   MOBILE BRAND
+   --------------------------------------------------------- */
+
+.mobile-brand {
+  display: none;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.mobile-brand-mark {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #cdd3ce;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.mobile-brand span {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+/* ---------------------------------------------------------
+   PAGE CONTENT
+   --------------------------------------------------------- */
+
+.student-content {
+  flex: 1;
+
+  width: 100%;
+
+  padding: 42px;
+}
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .student-sidebar {
+    width: 220px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .student-topbar {
+    padding: 0 28px;
+  }
+
+  .student-content {
+    padding: 32px 28px;
+  }
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .student-layout {
+    display: block;
+  }
+
+  .student-sidebar {
+    display: none;
+  }
+
+  .student-main {
+    min-height: 100vh;
+  }
+
+  .student-topbar {
+    height: 64px;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background: #f7f8f5;
+  }
+
+  .mobile-brand {
+    display: flex;
+  }
+
+  .topbar-user-text {
+    display: none;
+  }
+
+  .student-content {
+    padding: 28px 20px;
+  }
+}
+
+/* ---------------------------------------------------------
+   SMALL MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 420px) {
+  .student-topbar {
+    padding: 0 16px;
+  }
+
+  .student-content {
+    padding: 24px 16px;
+  }
+}

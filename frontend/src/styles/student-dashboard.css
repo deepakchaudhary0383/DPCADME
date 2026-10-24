@@ -1,0 +1,542 @@
+.student-dashboard {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* =================================
+   PAGE HEADER
+================================= */
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.dashboard-eyebrow {
+  margin: 0 0 9px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #68736b;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  color: #17211b;
+}
+
+.dashboard-subtitle {
+  max-width: 590px;
+  margin: 11px 0 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #68736b;
+}
+
+/* =================================
+   DISCOVER BUTTON
+================================= */
+
+.discover-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  min-width: 145px;
+  height: 42px;
+  padding: 0 14px 0 16px;
+  flex-shrink: 0;
+  border: 1px solid #17211b;
+  border-radius: 4px;
+  background: #17211b;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.discover-button:hover {
+  background: #2b3c31;
+}
+
+.discover-button:active {
+  transform: translateY(1px);
+}
+
+.discover-arrow {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* =================================
+   NETWORK STATS
+================================= */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 118px;
+  padding: 18px 20px;
+  border: 1px solid #dfe4df;
+  background: #ffffff;
+}
+
+.stat-label {
+  margin-bottom: 13px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #68736b;
+}
+
+.stat-item strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: #17211b;
+}
+
+.stat-description {
+  margin-top: 6px;
+  font-size: 10px;
+  color: #929a94;
+}
+
+/* =================================
+   MAIN GRID
+================================= */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 285px;
+  gap: 22px;
+  align-items: start;
+}
+
+/* =================================
+   GENERIC DASHBOARD SECTION
+================================= */
+
+.dashboard-section {
+  border: 1px solid #dfe4df;
+  background: #ffffff;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 21px 24px;
+  border-bottom: 1px solid #e4e8e4;
+  background: #fbfcfa;
+}
+
+.section-label {
+  margin: 0 0 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #68736b;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #17211b;
+}
+
+.section-link {
+  flex-shrink: 0;
+  color: #526058;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.section-link:hover {
+  color: #17211b;
+}
+
+/* =================================
+   ALUMNI LIST
+================================= */
+
+.alumni-list {
+  padding: 7px 24px 10px;
+}
+
+.dashboard-alumni {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 15px;
+  min-height: 104px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0ed;
+}
+
+.dashboard-alumni:last-child {
+  border-bottom: none;
+}
+
+/* =================================
+   ALUMNI AVATAR
+================================= */
+
+.alumni-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #d7ded8;
+  border-radius: 50%;
+  background: #e8ede8;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #34443a;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.alumni-avatar:hover {
+  border-color: #aeb9b1;
+  background: #e1e8e2;
+}
+
+/* =================================
+   ALUMNI INFORMATION
+================================= */
+
+.alumni-info {
+  min-width: 0;
+}
+
+.alumni-info h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #17211b;
+}
+
+.alumni-role {
+  margin: 3px 0 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #526058;
+}
+
+.alumni-company {
+  margin: 4px 0 0;
+  font-size: 10px;
+  color: #68736b;
+}
+
+.alumni-company span {
+  margin: 0 3px;
+  color: #a0a8a2;
+}
+
+.alumni-skills {
+  margin: 5px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
+  color: #929a94;
+}
+
+/* =================================
+   CONNECT BUTTON
+================================= */
+
+.connect-small {
+  height: 32px;
+  min-width: 72px;
+  padding: 0 11px;
+  border: 1px solid #d5dcd6;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #34443a;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.connect-small:hover:not(:disabled) {
+  border-color: #17211b;
+  background: #f5f7f4;
+  color: #17211b;
+}
+
+.connect-small:disabled {
+  cursor: default;
+  border-color: #dce2dd;
+  background: #f5f7f4;
+  color: #89918b;
+}
+
+/* =================================
+   EMPTY ALUMNI STATE
+================================= */
+
+.alumni-list > p {
+  margin: 0;
+  padding: 35px 10px;
+  text-align: center;
+  font-size: 11px;
+  color: #929a94;
+}
+
+/* =================================
+   RIGHT COLUMN
+================================= */
+
+.dashboard-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =================================
+   ACTIVITY
+================================= */
+
+.activity-list {
+  padding: 7px 22px 5px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0ed;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  border: 1px solid #d7ded8;
+  background: #f5f7f4;
+  color: #34443a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.activity-item strong {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #34443a;
+}
+
+.activity-item p {
+  margin: 4px 0 0;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #929a94;
+}
+
+.activity-link {
+  display: block;
+  padding: 15px 22px 17px;
+  border-top: 1px solid #e4e8e4;
+  color: #526058;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.activity-link:hover {
+  color: #17211b;
+}
+
+/* =================================
+   PROFILE PROMPT
+================================= */
+
+.profile-prompt {
+  padding: 22px;
+  background: #17211b;
+}
+
+.profile-prompt .section-label {
+  color: #aeb9b1;
+}
+
+.profile-prompt h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.profile-prompt p:not(.section-label) {
+  margin: 11px 0 0;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #c3cbc5;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-side {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .discover-button {
+    width: 100%;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .stat-item {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .student-dashboard {
+    padding-bottom: 25px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 31px;
+  }
+
+  .dashboard-side {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    padding: 19px;
+  }
+
+  .alumni-list {
+    padding: 5px 19px 8px;
+  }
+
+  .activity-list {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .activity-link {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+  .dashboard-alumni {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+
+  .alumni-avatar {
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .connect-small {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .alumni-info h3 {
+    font-size: 13px;
+  }
+
+  .alumni-skills {
+    max-width: 100%;
+  }
+}

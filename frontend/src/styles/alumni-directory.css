@@ -1,0 +1,469 @@
+.alumni-directory {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.directory-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 42px;
+}
+
+.directory-eyebrow {
+  margin: 0 0 12px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+  color: #68736b;
+}
+
+.directory-header h1 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 42px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+
+  color: #17211b;
+}
+
+.directory-subtitle {
+  max-width: 580px;
+  margin: 14px 0 0;
+
+  font-size: 15px;
+  line-height: 1.65;
+
+  color: #68736b;
+}
+
+.directory-count {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+
+  padding-bottom: 4px;
+
+  color: #68736b;
+}
+
+.directory-count strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #17211b;
+}
+
+.directory-count span {
+  font-size: 13px;
+}
+
+/* SEARCH + FILTER */
+
+.directory-tools {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 14px;
+
+  margin-bottom: 30px;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-52%);
+
+  font-size: 22px;
+  color: #68736b;
+}
+
+.search-wrapper input {
+  width: 100%;
+  height: 54px;
+
+  padding: 0 48px;
+
+  border: 1px solid #d9ded9;
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+  color: #17211b;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-wrapper input::placeholder {
+  color: #929a94;
+}
+
+.search-wrapper input:focus {
+  border-color: #687a6d;
+  box-shadow: 0 0 0 3px rgba(23, 33, 27, 0.05);
+}
+
+.clear-search {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 28px;
+
+  border: 0;
+  background: transparent;
+
+  color: #68736b;
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.company-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.company-filter label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #68736b;
+}
+
+.company-filter select {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d9ded9;
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  color: #17211b;
+  font-size: 13px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.company-filter select:focus {
+  border-color: #687a6d;
+}
+
+/* ALUMNI GRID */
+
+.alumni-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.directory-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 330px;
+
+  padding: 22px;
+
+  border: 1px solid #dfe3df;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.directory-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #c5cec7;
+
+  box-shadow: 0 10px 28px rgba(23, 33, 27, 0.06);
+}
+
+.directory-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.directory-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #e9eee9;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #34443a;
+}
+
+.graduation-year {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7b847d;
+}
+
+.directory-card-content {
+  flex: 1;
+}
+
+.directory-card-content h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+
+  color: #17211b;
+}
+
+.directory-role {
+  margin: 6px 0 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #526058;
+}
+
+.directory-company {
+  margin: 10px 0 0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #34443a;
+}
+
+.directory-company span {
+  color: #a0a8a2;
+}
+
+.directory-department {
+  margin: 4px 0 0;
+
+  font-size: 12px;
+
+  color: #89918b;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 18px;
+}
+
+.skill-list span {
+  padding: 5px 8px;
+
+  border: 1px solid #e0e5e0;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #68736b;
+}
+
+/* CARD FOOTER */
+
+.directory-card-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 9px;
+
+  margin-top: 24px;
+  padding-top: 17px;
+
+  border-top: 1px solid #edf0ed;
+}
+
+.profile-button,
+.directory-connect {
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.profile-button {
+  border: 1px solid #d7ddd8;
+
+  color: #34443a;
+  background: #ffffff;
+}
+
+.profile-button:hover {
+  border-color: #aeb9b1;
+  background: #f5f7f4;
+}
+
+.directory-connect {
+  padding: 0 15px;
+
+  border: 1px solid #17211b;
+
+  background: #17211b;
+
+  color: #ffffff;
+}
+
+.directory-connect:hover {
+  background: #2a3b30;
+}
+
+/* EMPTY STATE */
+
+.directory-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 360px;
+
+  border: 1px dashed #cfd6d0;
+
+  text-align: center;
+}
+
+.empty-mark {
+  margin-bottom: 12px;
+
+  font-size: 28px;
+  color: #8a948d;
+}
+
+.directory-empty h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+
+  color: #17211b;
+}
+
+.directory-empty p {
+  margin: 8px 0 18px;
+
+  font-size: 13px;
+  color: #78827b;
+}
+
+.directory-empty button {
+  height: 38px;
+  padding: 0 16px;
+
+  border: 1px solid #d3dad4;
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  color: #34443a;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.directory-empty button:hover {
+  background: #f2f5f2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .alumni-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .directory-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .directory-header h1 {
+    font-size: 34px;
+  }
+
+  .directory-tools {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .alumni-directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .directory-header {
+    margin-bottom: 30px;
+  }
+
+  .directory-header h1 {
+    font-size: 30px;
+  }
+
+  .directory-subtitle {
+    font-size: 14px;
+  }
+}

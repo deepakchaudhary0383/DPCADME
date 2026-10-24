@@ -1,0 +1,437 @@
+.alumni-layout {
+  min-height: 100vh;
+  background: #f7f8f5;
+  color: #17211b;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.alumni-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 238px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+  border-right: 1px solid #e5e9e4;
+
+  z-index: 20;
+}
+
+.alumni-sidebar-brand {
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 0 24px;
+
+  border-bottom: 1px solid #e5e9e4;
+}
+
+.alumni-sidebar-brand-mark {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #17211b;
+  color: #ffffff;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+
+  border-radius: 5px;
+}
+
+.alumni-sidebar-brand-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.alumni-navigation {
+  padding: 28px 14px;
+}
+
+.alumni-navigation-label {
+  margin: 0 10px 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  color: #879089;
+}
+
+.alumni-nav-link {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  height: 44px;
+
+  padding: 0 12px;
+  margin-bottom: 4px;
+
+  color: #657068;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border-radius: 5px;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.alumni-nav-link:hover {
+  background: #f3f5f2;
+  color: #17211b;
+}
+
+.alumni-nav-link.active {
+  background: #edf2ed;
+  color: #17211b;
+}
+
+.alumni-nav-icon {
+  width: 20px;
+
+  text-align: center;
+
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* =========================
+   SIDEBAR BOTTOM
+   ========================= */
+
+.alumni-sidebar-bottom {
+  margin-top: auto;
+  padding: 0 14px 18px;
+}
+
+.alumni-sidebar-divider {
+  height: 1px;
+
+  background: #e5e9e4;
+
+  margin-bottom: 14px;
+}
+
+.alumni-sidebar-user {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 8px;
+
+  background: transparent;
+  border: none;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+.alumni-sidebar-user:hover {
+  background: #f5f7f4;
+}
+
+.alumni-sidebar-user-avatar {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe7df;
+  color: #17211b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-radius: 50%;
+}
+
+.alumni-sidebar-user-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.alumni-sidebar-user-name {
+  overflow: hidden;
+
+  color: #17211b;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.alumni-sidebar-user-role {
+  color: #7b857e;
+
+  font-size: 10px;
+}
+
+.alumni-sidebar-logout {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 7px;
+
+  padding: 9px;
+
+  background: transparent;
+  border: none;
+
+  color: #7b857e;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+.alumni-sidebar-logout:hover {
+  background: #f5f7f4;
+  color: #17211b;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+.alumni-main {
+  min-height: 100vh;
+
+  margin-left: 238px;
+}
+
+.alumni-topbar {
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0 34px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9e4;
+}
+
+.alumni-topbar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 5px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.alumni-topbar-avatar {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe7df;
+  color: #17211b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-radius: 50%;
+}
+
+.alumni-topbar-user-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.alumni-topbar-user-text span {
+  color: #17211b;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.alumni-topbar-user-text small {
+  color: #7b857e;
+
+  font-size: 10px;
+}
+
+.alumni-content {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 42px 34px 60px;
+}
+
+/* =========================
+   MOBILE BRAND
+   ========================= */
+
+.alumni-mobile-brand {
+  display: none;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 850px) {
+  .alumni-sidebar {
+    width: 210px;
+  }
+
+  .alumni-main {
+    margin-left: 210px;
+  }
+
+  .alumni-content {
+    padding: 32px 24px 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  .alumni-sidebar {
+    position: static;
+
+    width: 100%;
+    height: auto;
+
+    border-right: none;
+    border-bottom: 1px solid #e5e9e4;
+  }
+
+  .alumni-navigation {
+    padding: 12px 14px 16px;
+
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+  }
+
+  .alumni-navigation-label {
+    display: none;
+  }
+
+  .alumni-nav-link {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .alumni-sidebar-bottom {
+    display: none;
+  }
+
+  .alumni-main {
+    margin-left: 0;
+  }
+
+  .alumni-topbar {
+    height: 62px;
+
+    justify-content: space-between;
+
+    padding: 0 18px;
+  }
+
+  .alumni-mobile-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .alumni-mobile-brand-mark {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #17211b;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    border-radius: 4px;
+  }
+
+  .alumni-topbar-user-text {
+    display: none;
+  }
+
+  .alumni-content {
+    padding: 28px 18px 45px;
+  }
+}

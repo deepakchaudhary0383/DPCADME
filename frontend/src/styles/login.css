@@ -1,0 +1,561 @@
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  background: #f7f8f5;
+}
+
+/* ---------------------------------------------------------
+   LEFT BRANDING SECTION
+   --------------------------------------------------------- */
+
+.login-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 100vh;
+  padding: 42px 64px;
+
+  background: #17211b;
+  color: #f4f5f1;
+
+  overflow: hidden;
+}
+
+/* subtle decorative line */
+
+.login-brand::after {
+  content: "";
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------------------------------------------------------
+   BRAND TOP
+   --------------------------------------------------------- */
+
+.brand-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+.brand-name {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+/* ---------------------------------------------------------
+   BRAND CONTENT
+   --------------------------------------------------------- */
+
+.brand-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 650px;
+
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #b7c2b9;
+}
+
+.brand-content h1 {
+  margin: 0;
+
+  max-width: 620px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(38px, 4vw, 60px);
+  line-height: 1.08;
+
+  font-weight: 600;
+
+  letter-spacing: -0.045em;
+
+  color: #f4f5f1;
+}
+
+.brand-description {
+  max-width: 510px;
+
+  margin: 30px 0 0;
+
+  font-size: 15px;
+  line-height: 1.75;
+
+  color: #aeb8b0;
+}
+
+/* ---------------------------------------------------------
+   BRAND FEATURES
+   --------------------------------------------------------- */
+
+.brand-features {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 28px;
+
+  margin-top: 42px;
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brand-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 13px;
+  color: #d4dad5;
+}
+
+.feature-number {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  color: #7f8d82;
+
+  letter-spacing: 0.08em;
+}
+
+/* ---------------------------------------------------------
+   BRAND FOOTER
+   --------------------------------------------------------- */
+
+.brand-footer {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #7f8b82;
+
+  letter-spacing: 0.04em;
+}
+
+.footer-divider {
+  color: #59645c;
+}
+
+/* ---------------------------------------------------------
+   RIGHT LOGIN PANEL
+   --------------------------------------------------------- */
+
+.login-panel {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 50px;
+
+  background: #f7f8f5;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* ---------------------------------------------------------
+   MOBILE BRAND
+   --------------------------------------------------------- */
+
+.mobile-brand {
+  display: none;
+
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 60px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.brand-mark.small {
+  width: 36px;
+  height: 36px;
+
+  border-color: #cdd2cd;
+
+  color: #17211b;
+
+  font-size: 15px;
+}
+
+/* ---------------------------------------------------------
+   LOGIN HEADER
+   --------------------------------------------------------- */
+
+.login-header {
+  margin-bottom: 38px;
+}
+
+.section-label {
+  margin: 0 0 14px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+
+  color: #68736b;
+}
+
+.login-header h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.15;
+
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+
+  color: #17211b;
+}
+
+.login-header > p:last-child {
+  max-width: 380px;
+
+  margin: 16px 0 0;
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  color: #707970;
+}
+
+/* ---------------------------------------------------------
+   FORM
+   --------------------------------------------------------- */
+
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #303b33;
+}
+
+.form-group input {
+  width: 100%;
+  height: 52px;
+
+  padding: 0 15px;
+
+  border: 1px solid #d6dbd6;
+  border-radius: 2px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #17211b;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #9aa29c;
+}
+
+.form-group input:hover {
+  border-color: #b9c1ba;
+}
+
+.form-group input:focus {
+  border-color: #56665a;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(86, 102, 90, 0.08);
+}
+
+/* ---------------------------------------------------------
+   LOGIN BUTTON
+   --------------------------------------------------------- */
+
+.login-button {
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 8px;
+  padding: 0 18px;
+
+  border: 1px solid #17211b;
+  border-radius: 2px;
+
+  background: #17211b;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-button:hover {
+  background: #243128;
+  border-color: #243128;
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.button-arrow {
+  font-size: 20px;
+  font-weight: 400;
+
+  transition: transform 0.2s ease;
+}
+
+.login-button:hover .button-arrow {
+  transform: translateX(3px);
+}
+
+/* ---------------------------------------------------------
+   REGISTER PROMPT
+   --------------------------------------------------------- */
+
+.register-prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 30px;
+
+  font-size: 13px;
+
+  color: #747c76;
+}
+
+.register-prompt a {
+  color: #17211b;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #17211b;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.register-prompt a:hover {
+  color: #59675d;
+
+  border-color: #59675d;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE - TABLET
+   --------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .login-page {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-brand {
+    padding: 38px 42px;
+  }
+
+  .login-panel {
+    padding: 50px 38px;
+  }
+
+  .brand-content h1 {
+    font-size: 42px;
+  }
+
+  .brand-description {
+    font-size: 14px;
+  }
+
+  .brand-features {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE - MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 850px) {
+  .login-page {
+    display: block;
+    min-height: 100vh;
+  }
+
+  .login-brand {
+    display: none;
+  }
+
+  .login-panel {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: flex-start;
+
+    padding: 42px 24px;
+  }
+
+  .login-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .mobile-brand {
+    display: flex;
+  }
+
+  .login-header {
+    margin-bottom: 34px;
+  }
+
+  .login-header h2 {
+    font-size: 32px;
+  }
+}
+
+.login-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #e3b8b8;
+  background: #fff5f5;
+  color: #a33a3a;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.login-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE - SMALL MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .login-panel {
+    padding: 30px 20px;
+  }
+
+  .mobile-brand {
+    margin-bottom: 48px;
+  }
+
+  .login-header h2 {
+    font-size: 28px;
+  }
+
+  .login-header > p:last-child {
+    font-size: 13px;
+  }
+
+  .form-group input {
+    height: 50px;
+  }
+
+  .login-button {
+    height: 52px;
+  }
+
+  .register-prompt {
+    flex-direction: column;
+    gap: 5px;
+
+    margin-top: 26px;
+  }
+}

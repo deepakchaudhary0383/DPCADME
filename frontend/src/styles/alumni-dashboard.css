@@ -1,0 +1,441 @@
+/* ================================
+   ALUMNI DASHBOARD
+================================ */
+
+.alumni-dashboard-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 8px 0 40px;
+  color: #173b2d;
+}
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.alumni-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.alumni-dashboard-header h1 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #173b2d;
+}
+
+.alumni-dashboard-header > div > p:last-child {
+  margin: 8px 0 0;
+  color: #6f8178;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.alumni-eyebrow {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #5f806d;
+}
+
+/* ================================
+   TOP DASHBOARD AREA
+================================ */
+
+.alumni-top-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.45fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+/* ================================
+   STAT CARDS
+================================ */
+
+.alumni-stat-card {
+  min-height: 128px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 14px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 12px rgba(27, 63, 46, 0.04);
+}
+
+.alumni-stat-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: #708279;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.alumni-stat-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #173b2d;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.alumni-stat-card p {
+  margin: 0;
+  color: #84928b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ================================
+   DASHBOARD GRID
+================================ */
+
+.alumni-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 18px;
+}
+
+/* ================================
+   DASHBOARD CARD
+================================ */
+
+.alumni-dashboard-card {
+  background: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(27, 63, 46, 0.04);
+  box-sizing: border-box;
+}
+
+/* ================================
+   CARD HEADING
+================================ */
+
+.alumni-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px 17px;
+  border-bottom: 1px solid #edf1ee;
+}
+
+.alumni-card-heading h2 {
+  margin: 4px 0 0;
+  color: #173b2d;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.alumni-card-heading a {
+  color: #4d725f;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.alumni-card-heading a:hover {
+  color: #173b2d;
+  text-decoration: underline;
+}
+
+.alumni-card-label {
+  margin: 0;
+  color: #6c8878;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+/* ================================
+   ACTION CARD
+================================ */
+
+.alumni-action-card {
+  min-height: 128px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f7f4;
+  border: 1px solid #e0e7e2;
+}
+
+.alumni-action-card h2 {
+  margin: 8px 0 8px;
+  color: #173b2d;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.alumni-action-card p:not(.alumni-card-label) {
+  margin: 0 0 18px;
+  color: #74827b;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.alumni-primary-button,
+.alumni-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.alumni-primary-button {
+  padding: 11px 18px;
+  background: #1f4d3a;
+  color: #ffffff;
+  border: 1px solid #1f4d3a;
+}
+
+.alumni-primary-button:hover {
+  background: #173b2d;
+  border-color: #173b2d;
+}
+
+.alumni-secondary-button {
+  width: fit-content;
+  padding: 10px 15px;
+  background: #ffffff;
+  color: #24563f;
+  border: 1px solid #d5e0d9;
+}
+
+.alumni-secondary-button:hover {
+  background: #edf4ef;
+  border-color: #bfcfc4;
+  color: #173b2d;
+}
+
+/* ================================
+   CONNECTION LIST
+================================ */
+
+.alumni-connection-list {
+  padding: 4px 22px 12px;
+}
+
+.alumni-connection-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf1ee;
+}
+
+.alumni-connection-row:last-child {
+  border-bottom: none;
+}
+
+/* ================================
+   AVATAR
+================================ */
+
+.alumni-avatar {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f0eb;
+  color: #315f49;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* ================================
+   CONNECTION INFO
+================================ */
+
+.alumni-connection-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.alumni-connection-info strong {
+  overflow: hidden;
+  color: #244737;
+  font-size: 13px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.alumni-connection-info span {
+  overflow: hidden;
+  color: #8a9790;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ================================
+   STATUS
+================================ */
+
+.alumni-status {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.alumni-status.accepted {
+  background: #eaf4ed;
+  color: #397054;
+}
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.alumni-empty-state {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.alumni-empty-state h3 {
+  margin: 0 0 7px;
+  color: #294d3b;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.alumni-empty-state p {
+  max-width: 320px;
+  margin: 0 auto;
+  color: #84928b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.alumni-dashboard-loading {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #718078;
+  font-size: 14px;
+}
+
+/* ================================
+   ERROR
+================================ */
+
+.alumni-dashboard-error {
+  padding: 18px 20px;
+  border: 1px solid #ead6d6;
+  border-radius: 12px;
+  background: #fff8f8;
+  color: #9a4d4d;
+  font-size: 13px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+  .alumni-top-dashboard {
+    grid-template-columns: 1fr 1fr 1.25fr;
+  }
+
+  .alumni-dashboard-grid {
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .alumni-dashboard-header h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 900px) {
+  .alumni-top-dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .alumni-top-dashboard .alumni-action-card {
+    grid-column: 1 / -1;
+  }
+
+  .alumni-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .alumni-dashboard-page {
+    padding: 5px 0 30px;
+  }
+
+  .alumni-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .alumni-dashboard-header h1 {
+    font-size: 30px;
+  }
+
+  .alumni-top-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .alumni-top-dashboard .alumni-action-card {
+    grid-column: auto;
+  }
+
+  .alumni-card-heading {
+    padding: 18px;
+  }
+
+  .alumni-connection-list {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .alumni-connection-row {
+    gap: 10px;
+  }
+
+  .alumni-status {
+    display: none;
+  }
+}

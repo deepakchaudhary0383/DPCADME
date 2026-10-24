@@ -1,0 +1,534 @@
+.alumni-profile-page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.alumni-profile-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 22px;
+}
+
+.alumni-profile-header h1 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+
+  color: #17211b;
+}
+
+.alumni-profile-header > div > p:last-child {
+  max-width: 650px;
+  margin: 10px 0 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #69736c;
+}
+
+/* =========================
+   EDIT BUTTON
+   ========================= */
+
+.alumni-profile-edit-button {
+  flex-shrink: 0;
+
+  padding: 11px 18px;
+
+  border: 1px solid #cfd7d1;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #263129;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.alumni-profile-edit-button:hover {
+  background: #f5f7f5;
+  border-color: #bbc6be;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   ALERTS
+   ========================= */
+
+.alumni-profile-error {
+  margin-bottom: 16px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #e7caca;
+  border-radius: 11px;
+
+  background: #fff5f5;
+
+  color: #8b3838;
+
+  font-size: 13px;
+}
+
+.alumni-profile-success {
+  margin-bottom: 16px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #cddfce;
+  border-radius: 11px;
+
+  background: #f2f8f3;
+
+  color: #3d6848;
+
+  font-size: 13px;
+}
+
+/* =========================
+   PROFILE IDENTITY CARD
+   ========================= */
+
+.alumni-profile-card {
+  margin-bottom: 18px;
+
+  padding: 24px;
+
+  border: 1px solid #dfe4e0;
+  border-radius: 15px;
+
+  background: #ffffff;
+}
+
+.alumni-profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.alumni-profile-avatar {
+  width: 68px;
+  height: 68px;
+  flex: 0 0 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9eeea;
+  color: #344138;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.alumni-profile-identity h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+
+  color: #17211b;
+}
+
+.alumni-profile-identity p {
+  margin: 5px 0 8px;
+
+  font-size: 13px;
+
+  color: #707a73;
+}
+
+.alumni-profile-identity span {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  background: #edf4ee;
+  color: #3d6249;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   PROFILE SECTION
+   ========================= */
+
+.alumni-profile-section {
+  padding: 24px;
+
+  border: 1px solid #dfe4e0;
+  border-radius: 15px;
+
+  background: #ffffff;
+}
+
+.alumni-profile-section-heading {
+  margin-bottom: 20px;
+}
+
+.alumni-profile-section-heading p {
+  margin: 0 0 7px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
+  color: #7a847d;
+}
+
+.alumni-profile-section-heading h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+
+  color: #263129;
+}
+
+/* =========================
+   DETAILS GRID
+   ========================= */
+
+.alumni-profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.alumni-profile-detail {
+  min-height: 75px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 14px;
+
+  border-radius: 10px;
+
+  background: #f7f9f7;
+}
+
+.alumni-profile-detail span {
+  margin-bottom: 5px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #808981;
+}
+
+.alumni-profile-detail strong {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+
+  color: #344038;
+}
+
+/* =========================
+   SKILLS / ABOUT
+   ========================= */
+
+.alumni-profile-about {
+  margin-top: 18px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e7ebe8;
+}
+
+.alumni-profile-about > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #808981;
+}
+
+.alumni-profile-about p {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: #606b63;
+}
+
+/* =========================
+   LINKEDIN
+   ========================= */
+
+.alumni-profile-linkedin {
+  margin-top: 18px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e7ebe8;
+}
+
+.alumni-profile-linkedin span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  color: #808981;
+}
+
+.alumni-profile-linkedin a {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #3d6249;
+
+  text-decoration: none;
+}
+
+.alumni-profile-linkedin a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+.alumni-profile-form {
+  margin: 0;
+}
+
+.alumni-profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.alumni-profile-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-profile-field-full {
+  grid-column: 1 / -1;
+}
+
+.alumni-profile-field label {
+  margin-bottom: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  color: #48534b;
+}
+
+.alumni-profile-field input,
+.alumni-profile-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #d7ded9;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  padding: 11px 12px;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  color: #263129;
+
+  outline: none;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.alumni-profile-field input {
+  height: 43px;
+}
+
+.alumni-profile-field textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.alumni-profile-field input:focus,
+.alumni-profile-field textarea:focus {
+  border-color: #98a89d;
+
+  box-shadow: 0 0 0 3px rgba(108, 128, 113, 0.08);
+}
+
+.alumni-profile-field input::placeholder,
+.alumni-profile-field textarea::placeholder {
+  color: #a1aaa4;
+}
+
+/* =========================
+   FORM ACTIONS
+   ========================= */
+
+.alumni-profile-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 15px;
+}
+
+.alumni-profile-cancel-button,
+.alumni-profile-save-button {
+  min-width: 110px;
+
+  padding: 11px 18px;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.alumni-profile-cancel-button {
+  border: 1px solid #d1d8d3;
+
+  background: #ffffff;
+  color: #4b574f;
+}
+
+.alumni-profile-cancel-button:hover {
+  background: #f5f7f5;
+}
+
+.alumni-profile-save-button {
+  border: 1px solid #26352b;
+
+  background: #26352b;
+  color: #ffffff;
+}
+
+.alumni-profile-save-button:hover {
+  background: #1c2921;
+  transform: translateY(-1px);
+}
+
+.alumni-profile-cancel-button:disabled,
+.alumni-profile-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   LOADING
+   ========================= */
+
+.alumni-profile-loading {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #707a73;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 850px) {
+  .alumni-profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .alumni-profile-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .alumni-profile-header h1 {
+    font-size: 30px;
+  }
+
+  .alumni-profile-card,
+  .alumni-profile-section {
+    padding: 18px;
+  }
+
+  .alumni-profile-details-grid,
+  .alumni-profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .alumni-profile-field-full {
+    grid-column: auto;
+  }
+
+  .alumni-profile-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .alumni-profile-cancel-button,
+  .alumni-profile-save-button {
+    width: 100%;
+  }
+}

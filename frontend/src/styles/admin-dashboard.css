@@ -1,0 +1,236 @@
+.admin-dashboard {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.admin-dashboard-header {
+  margin-bottom: 28px;
+}
+
+.admin-dashboard-eyebrow {
+  margin: 0 0 9px;
+  color: #68736b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.admin-dashboard-header h1 {
+  margin: 0;
+  color: #17211b;
+  font-family: "Manrope", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+
+.admin-dashboard-header > div > p:last-child {
+  margin: 10px 0 0;
+  color: #69736c;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.admin-dashboard-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border: 1px solid #e7caca;
+  border-radius: 10px;
+  background: #fff5f5;
+  color: #8b3838;
+  font-size: 12px;
+}
+
+.admin-dashboard-error button {
+  padding: 7px 12px;
+  border: 1px solid #dcbaba;
+  border-radius: 7px;
+  background: white;
+  color: #8b3838;
+  cursor: pointer;
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.admin-stat-card {
+  min-height: 155px;
+  padding: 22px;
+  border: 1px solid #e0e5e1;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.admin-stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.admin-stat-top > span {
+  color: #69736c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-stat-icon,
+.admin-management-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf3ee;
+  color: #3d6249;
+}
+
+.admin-stat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.admin-stat-number {
+  display: block;
+  margin-top: 13px;
+  color: #17211b;
+  font-family: "Manrope", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.admin-stat-card > p {
+  margin: 5px 0 0;
+  color: #879088;
+  font-size: 11px;
+}
+
+.admin-management-section {
+  margin-top: 8px;
+}
+
+.admin-section-heading {
+  margin-bottom: 17px;
+}
+
+.admin-section-heading p {
+  margin: 0 0 7px;
+  color: #7a847d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.admin-section-heading h2 {
+  margin: 0;
+  color: #263129;
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.admin-management-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-management-card {
+  padding: 23px;
+  border: 1px solid #e0e5e1;
+  border-radius: 14px;
+  background: #ffffff;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-management-card:hover {
+  border-color: #c8d3ca;
+  transform: translateY(-2px);
+}
+
+.admin-management-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  border-radius: 11px;
+  font-size: 21px;
+}
+
+.admin-management-card h3 {
+  margin: 0;
+  color: #263129;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.admin-management-card > p {
+  min-height: 55px;
+  margin: 9px 0 18px;
+  color: #737d75;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.admin-management-card button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8e0da;
+  border-radius: 9px;
+  background: #f8faf8;
+  color: #344b39;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-management-card button:hover {
+  border-color: #bdcbbf;
+  background: #edf3ee;
+}
+
+.admin-management-card button span {
+  font-size: 17px;
+}
+
+@media (max-width: 700px) {
+  .admin-dashboard-header h1 {
+    font-size: 30px;
+  }
+
+  .admin-stats-grid,
+  .admin-management-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stat-card {
+    min-height: 135px;
+  }
+
+  .admin-management-card > p {
+    min-height: auto;
+  }
+}

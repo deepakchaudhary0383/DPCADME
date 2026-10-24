@@ -1,0 +1,417 @@
+.admin-alumni-page {
+  width: 100%;
+  color: #202b3c;
+}
+
+.admin-alumni-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.admin-alumni-eyebrow {
+  margin: 0 0 8px;
+  color: #4968c8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.admin-alumni-header h1 {
+  margin: 0;
+  color: #17243a;
+  font-size: clamp(25px, 3vw, 32px);
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+
+.admin-alumni-header > div:first-child > p:last-child {
+  margin: 9px 0 0;
+  color: #788397;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.admin-alumni-total {
+  min-width: 135px;
+  padding: 17px 22px;
+  border: 1px solid #e7ebf3;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.admin-alumni-total span,
+.admin-alumni-total strong {
+  display: block;
+}
+
+.admin-alumni-total span {
+  margin-bottom: 6px;
+  color: #7c879a;
+  font-size: 12px;
+}
+
+.admin-alumni-total strong {
+  color: #243b72;
+  font-size: 27px;
+}
+
+.admin-alumni-panel {
+  overflow: hidden;
+  border: 1px solid #e8ecf3;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 5px 22px rgba(30, 50, 85, 0.035);
+}
+
+.admin-alumni-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.admin-alumni-toolbar h2 {
+  margin: 0;
+  color: #243149;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.admin-alumni-toolbar p {
+  margin: 7px 0 0;
+  color: #8993a4;
+  font-size: 13px;
+}
+
+.admin-alumni-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: min(100%, 320px);
+  min-height: 43px;
+  padding: 0 12px;
+  border: 1px solid #e0e6ef;
+  border-radius: 9px;
+  background: #fbfcfe;
+}
+
+.admin-alumni-search > span {
+  color: #8994a8;
+  font-size: 23px;
+  line-height: 1;
+}
+
+.admin-alumni-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #29364b;
+  font: inherit;
+  font-size: 13px;
+}
+
+.admin-alumni-search input::placeholder {
+  color: #9aa4b4;
+}
+
+.admin-alumni-search button {
+  border: 0;
+  background: transparent;
+  color: #778399;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.admin-alumni-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-alumni-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-alumni-table thead {
+  background: #f8f9fc;
+}
+
+.admin-alumni-table th {
+  padding: 15px 22px;
+  color: #8993a5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+  white-space: nowrap;
+}
+
+.admin-alumni-table td {
+  padding: 17px 22px;
+  border-top: 1px solid #f0f2f6;
+  color: #566176;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.admin-alumni-table tbody tr:hover {
+  background: #fbfcff;
+}
+
+.admin-alumni-person {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 175px;
+}
+
+.admin-alumni-person strong {
+  color: #29364b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.admin-alumni-avatar {
+  display: grid;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 11px;
+  background: #eaf0ff;
+  color: #3d5fc0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.admin-alumni-email {
+  color: #707c90 !important;
+}
+
+.admin-alumni-role {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #edf2ff;
+  color: #4261b4;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.admin-alumni-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-alumni-status::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+}
+
+.admin-alumni-status.is-active {
+  background: #eaf8f0;
+  color: #258454;
+}
+
+.admin-alumni-status.is-other {
+  background: #f1f3f6;
+  color: #758094;
+}
+
+.admin-alumni-action-heading,
+.admin-alumni-action-cell {
+  text-align: right;
+}
+
+.admin-alumni-delete-button {
+  padding: 7px 12px;
+  border: 1px solid #f2d9dc;
+  border-radius: 7px;
+  background: #fff8f8;
+  color: #bd4652;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.admin-alumni-delete-button:hover {
+  border-color: #e8b7bd;
+  background: #ffeded;
+}
+
+.admin-alumni-state {
+  height: 120px;
+  color: #8993a5 !important;
+  text-align: center;
+}
+
+.admin-alumni-footer {
+  padding: 15px 22px;
+  border-top: 1px solid #edf0f5;
+  color: #8993a5;
+  font-size: 12px;
+}
+
+.admin-alumni-alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  border: 1px solid #f0d2d5;
+  border-radius: 9px;
+  background: #fff6f6;
+  color: #a63c47;
+  font-size: 13px;
+}
+
+.admin-alumni-alert button {
+  border: 0;
+  background: transparent;
+  color: #a63c47;
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.admin-alumni-modal-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(17, 27, 45, 0.48);
+}
+
+.admin-alumni-modal {
+  width: min(100%, 430px);
+  padding: 30px;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.admin-alumni-modal-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 17px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff0f0;
+  color: #c33e4c;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.admin-alumni-modal h2 {
+  margin: 0;
+  color: #253149;
+  font-size: 20px;
+}
+
+.admin-alumni-modal > p {
+  margin: 12px 0 24px;
+  color: #788397;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.admin-alumni-modal > p strong {
+  color: #364258;
+}
+
+.admin-alumni-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.admin-alumni-modal-actions button {
+  min-height: 41px;
+  padding: 0 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.admin-alumni-cancel-button {
+  border: 1px solid #dfe4ed;
+  background: #fff;
+  color: #5d687b;
+}
+
+.admin-alumni-confirm-delete {
+  border: 1px solid #c73f4b;
+  background: #c73f4b;
+  color: #fff;
+}
+
+.admin-alumni-modal-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 760px) {
+  .admin-alumni-header {
+    align-items: flex-start;
+  }
+
+  .admin-alumni-total {
+    min-width: 105px;
+    padding: 13px 15px;
+  }
+
+  .admin-alumni-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .admin-alumni-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .admin-alumni-table th,
+  .admin-alumni-table td {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-alumni-header {
+    flex-direction: column;
+  }
+
+  .admin-alumni-total {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .admin-alumni-modal {
+    padding: 24px 19px;
+  }
+}

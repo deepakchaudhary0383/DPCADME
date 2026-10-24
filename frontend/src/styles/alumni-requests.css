@@ -1,0 +1,390 @@
+/* ================================
+   ALUMNI REQUESTS PAGE
+================================ */
+
+.alumni-requests-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 8px 0 40px;
+  color: #173b2d;
+}
+
+/* ================================
+   PAGE HEADER
+================================ */
+
+.alumni-requests-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.alumni-requests-header h1 {
+  margin: 0;
+  color: #173b2d;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.alumni-requests-header > div:first-child > p:last-child {
+  margin: 8px 0 0;
+  color: #6f8178;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.alumni-eyebrow {
+  margin: 0 0 8px;
+  color: #5f806d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* ================================
+   REQUEST COUNT
+================================ */
+
+.alumni-request-count {
+  min-width: 105px;
+  padding: 15px 20px;
+  background: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(27, 63, 46, 0.04);
+}
+
+.alumni-request-count span {
+  display: block;
+  margin-bottom: 6px;
+  color: #74837b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.alumni-request-count strong {
+  display: block;
+  color: #173b2d;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+/* ================================
+   REQUEST LIST
+================================ */
+
+.alumni-requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ================================
+   REQUEST CARD
+================================ */
+
+.alumni-request-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(27, 63, 46, 0.04);
+  box-sizing: border-box;
+}
+
+/* ================================
+   AVATAR
+================================ */
+
+.alumni-request-avatar {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #e8f0eb;
+  color: #315f49;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* ================================
+   REQUEST CONTENT
+================================ */
+
+.alumni-request-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.alumni-request-main h2 {
+  margin: 0 0 4px;
+  color: #244737;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.alumni-request-email {
+  margin: 0;
+  color: #84928b;
+  font-size: 12px;
+}
+
+/* ================================
+   STUDENT DETAILS
+================================ */
+
+.alumni-request-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.alumni-request-detail {
+  min-width: 125px;
+  padding: 9px 12px;
+  background: #f5f7f4;
+  border: 1px solid #e5ebe7;
+  border-radius: 9px;
+}
+
+.alumni-request-detail span {
+  display: block;
+  margin-bottom: 4px;
+  color: #87948d;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.alumni-request-detail strong {
+  display: block;
+  color: #315a46;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ================================
+   ACTION BUTTONS
+================================ */
+
+.alumni-request-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.alumni-request-actions button {
+  min-width: 100px;
+  padding: 9px 14px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.alumni-request-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* Reject */
+
+.alumni-reject-button {
+  background: #ffffff;
+  border: 1px solid #e1d6d6;
+  color: #8b5555;
+}
+
+.alumni-reject-button:hover:not(:disabled) {
+  background: #fff7f7;
+  border-color: #d7bebe;
+  color: #7d4141;
+}
+
+/* Accept */
+
+.alumni-accept-button {
+  background: #1f4d3a;
+  border: 1px solid #1f4d3a;
+  color: #ffffff;
+}
+
+.alumni-accept-button:hover:not(:disabled) {
+  background: #173b2d;
+  border-color: #173b2d;
+}
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+.alumni-requests-empty {
+  padding: 65px 25px;
+  background: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(27, 63, 46, 0.04);
+}
+
+.alumni-empty-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #eaf4ed;
+  color: #397054;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.alumni-requests-empty h2 {
+  margin: 0 0 8px;
+  color: #294d3b;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.alumni-requests-empty p {
+  max-width: 400px;
+  margin: 0 auto;
+  color: #84928b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.alumni-requests-loading {
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #718078;
+  font-size: 14px;
+}
+
+/* ================================
+   ERROR
+================================ */
+
+.alumni-requests-error {
+  margin-bottom: 16px;
+  padding: 14px 18px;
+
+  background: #fff8f8;
+  border: 1px solid #ead6d6;
+  border-radius: 10px;
+
+  color: #9a4d4d;
+  font-size: 12px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .alumni-request-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .alumni-request-content {
+    flex-basis: calc(100% - 68px);
+  }
+
+  .alumni-request-actions {
+    width: 100%;
+    flex-direction: row;
+    margin-left: 68px;
+  }
+
+  .alumni-request-actions button {
+    flex: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .alumni-requests-page {
+    padding: 5px 0 30px;
+  }
+
+  .alumni-requests-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .alumni-requests-header h1 {
+    font-size: 30px;
+  }
+
+  .alumni-request-count {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .alumni-request-card {
+    padding: 16px;
+    gap: 13px;
+  }
+
+  .alumni-request-avatar {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+    font-size: 15px;
+  }
+
+  .alumni-request-content {
+    flex-basis: calc(100% - 57px);
+  }
+
+  .alumni-request-details {
+    flex-direction: column;
+  }
+
+  .alumni-request-detail {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .alumni-request-actions {
+    margin-left: 0;
+  }
+}

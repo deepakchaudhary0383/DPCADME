@@ -1,0 +1,385 @@
+.alumni-profile {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* BACK */
+
+.profile-back {
+  display: inline-flex;
+  margin-bottom: 28px;
+
+  color: #68736b;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.profile-back:hover {
+  color: #17211b;
+}
+
+/* HEADER */
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 30px 0;
+
+  border-top: 1px solid #dfe4df;
+  border-bottom: 1px solid #dfe4df;
+}
+
+.profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 82px;
+  height: 82px;
+
+  border-radius: 50%;
+
+  background: #e7ede8;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #34443a;
+}
+
+.profile-eyebrow {
+  margin: 0 0 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+  color: #68736b;
+}
+
+.profile-heading h1 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+
+  color: #17211b;
+}
+
+.profile-role {
+  margin: 7px 0 0;
+
+  font-size: 14px;
+  color: #526058;
+}
+
+.profile-company {
+  margin: 5px 0 0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #34443a;
+}
+
+.profile-company span {
+  color: #a1a9a3;
+}
+
+.profile-connect {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  height: 44px;
+  padding: 0 18px;
+
+  border: 1px solid #17211b;
+  border-radius: 4px;
+
+  background: #17211b;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.profile-connect:hover {
+  background: #2b3c31;
+}
+
+/* CONTENT */
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+
+  gap: 70px;
+
+  padding-top: 48px;
+}
+
+.profile-main {
+  min-width: 0;
+}
+
+.profile-section {
+  padding-bottom: 42px;
+  margin-bottom: 42px;
+
+  border-bottom: 1px solid #e2e6e2;
+}
+
+.profile-section:last-child {
+  margin-bottom: 0;
+}
+
+.profile-section-label {
+  margin: 0 0 10px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+  color: #68736b;
+}
+
+.profile-section h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+
+  color: #17211b;
+}
+
+.profile-bio {
+  max-width: 680px;
+
+  margin: 18px 0 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #59645d;
+}
+
+/* SKILLS */
+
+.profile-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.profile-skills span {
+  padding: 8px 11px;
+
+  border: 1px solid #dce2dd;
+
+  background: #ffffff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #526058;
+}
+
+/* SIDEBAR */
+
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.profile-details {
+  padding: 22px;
+
+  border: 1px solid #dfe4df;
+
+  background: #ffffff;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #edf0ed;
+}
+
+.detail-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 2px;
+}
+
+.detail-label {
+  font-size: 10px;
+  color: #8a938d;
+}
+
+.detail-item strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: #34443a;
+}
+
+/* HELP BOX */
+
+.profile-help {
+  padding: 24px;
+
+  background: #17211b;
+  color: #ffffff;
+}
+
+.profile-help .profile-section-label {
+  color: #aeb9b1;
+}
+
+.profile-help h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.profile-help p:not(.profile-section-label) {
+  margin: 12px 0 20px;
+
+  font-size: 12px;
+  line-height: 1.65;
+
+  color: #c3cbc5;
+}
+
+.help-connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+
+  border: 1px solid #6f7d73;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.help-connect:hover {
+  background: #26372c;
+}
+
+/* NOT FOUND */
+
+.profile-not-found {
+  max-width: 600px;
+  padding-top: 40px;
+}
+
+.profile-not-found h1 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #17211b;
+}
+
+.profile-not-found > p:not(.profile-eyebrow) {
+  margin: 12px 0 22px;
+
+  font-size: 14px;
+  color: #68736b;
+}
+
+.profile-not-found a {
+  color: #34443a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .profile-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-identity {
+    align-items: flex-start;
+  }
+
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+
+    font-size: 24px;
+  }
+
+  .profile-heading h1 {
+    font-size: 28px;
+  }
+
+  .profile-connect {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile-sidebar {
+    grid-template-columns: 1fr;
+  }
+}
